@@ -191,6 +191,7 @@ h2 {
 /* Cases */
 
 .cases {
+  animation: 1s slide-in 0s both;
   border-bottom: 1px solid var(--c-light);
   border-top: 1px solid var(--c-light);
 }
@@ -244,11 +245,15 @@ h2 {
 
 .services__list {
   line-height: 1.3;
-  list-style: "◇ " inside;
+  list-style: square inside;
 }
 
 .services__item {
   margin: 1rem 0;
+
+  &::marker {
+    color: var(--c-light);
+  }
 }
 
 
