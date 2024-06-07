@@ -199,7 +199,7 @@ h2 {
   height: 200px;
   mask: linear-gradient(90deg, transparent, white 40%, white 60%, transparent);
   opacity: .4;
-  padding-block: 2rem;
+  padding-block: 2.5rem;
   transition: opacity .5s;
 
   &:hover {
@@ -254,8 +254,15 @@ h2 {
 
 /* Swiper Overwrites */
 
+.swiper {
+  &:hover .swiper-pagination {
+    opacity: 1;
+  }
+}
+
 .swiper-wrapper {
   margin: 0;
+  pointer-events: none;
   -webkit-user-select: none;
   user-select: none;
 }
@@ -267,7 +274,7 @@ h2 {
 }
 
 .swiper-pagination {
-  padding-block: 1rem;
+  opacity: 0;
 }
 
 .swiper-pagination-bullet {

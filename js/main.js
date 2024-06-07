@@ -3,12 +3,13 @@ const swiper = new Swiper('.swiper', {
     delay: 1500,
   },
   slidesPerView: 'auto',
-  spaceBetween: 200,
+  spaceBetween: 150,
   speed: 2000,
   centeredSlides: true,
   loop: true,
-  // pagination: {
-  //   el: '.swiper-pagination',
-  //   clickable: true,
-  // },
+  allowTouchMove: false,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
 });
