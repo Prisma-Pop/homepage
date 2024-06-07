@@ -198,7 +198,13 @@ h2 {
 .cases__slider {
   height: 200px;
   mask: linear-gradient(90deg, transparent, white 40%, white 60%, transparent);
+  opacity: .4;
   padding-block: 2rem;
+  transition: opacity .5s;
+
+  &:hover {
+    opacity: 1;
+  }
 }
 
 .cases__logo {
@@ -218,7 +224,12 @@ h2 {
 }
 
 .text-block {
-  max-width: 70ch;
+  max-width: 75ch;
+
+  p,
+  ul {
+    margin-inline-start: 1.3rem;
+  }
 }
 
 .about {
@@ -233,7 +244,7 @@ h2 {
 
 .services__list {
   line-height: 1.3;
-  list-style: square inside;
+  list-style: "◇ " inside;
 }
 
 .services__item {
