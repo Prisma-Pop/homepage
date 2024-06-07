@@ -1,0 +1,274 @@
+/* Colors */
+:root {
+  --c-blue: #80e9ff;
+  --c-yellow: #ffd700;
+  --c-magenta: #ff87ff;
+  --c-mute: #667;
+  --c-light: #bbc;
+}
+
+
+html {
+  font-family: Murecho, sans-serif;
+}
+
+p,
+ul,
+ol {
+  font-size: 1.5rem;
+  margin: 1em 0;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 300;
+
+  &::before {
+    background: linear-gradient(var(--c-blue) 0,var(--c-blue) 33%,var(--c-magenta) 33%,var(--c-magenta) 66%,var(--c-yellow) 66%);
+    content: "";
+    display: inline-block;
+    height: 2cap;
+    margin-inline-end: 1rem;
+    vertical-align: middle;
+    width: .3rem;
+  }
+}
+
+
+/* Hero */
+
+.hero {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 200px);
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.hero__logo,
+.hero__tagline {
+  animation: 2s slide-in .3s both;
+  text-align: center;
+  width: 100%;
+}
+
+.hero__tagline {
+  animation-delay: .7s;
+  font-size: 2rem;
+}
+
+@keyframes slide-in {
+  from {
+    transform: translatey(-20%);
+    opacity: 0;
+  }
+}
+
+.hero__logo-image {
+  max-width: 60rem;
+}
+
+.hero__background {
+  animation: 2s zoom-in;
+  inset: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+@keyframes zoom-in {
+  from {
+    filter: blur(1rem);
+    transform: scale(1.5);
+  }
+}
+
+.triangle {
+  --tri-width: calc(418px * 2);
+  --tri-height-l: calc(842px * 2);
+  --tri-height-s: calc(547px * 2);
+
+  animation: 1s ease 2s infinite alternate wobble;
+  position: absolute;
+
+  path {
+    transform: scale(.99) translate(6px, 6px);
+  }
+
+}
+
+.triangle--blue {
+  height: var(--tri-height-l);
+}
+
+.triangle--yellow,
+.triangle--magenta {
+  height: var(--tri-height-s);
+}
+
+.triangle--fill.triangle--blue {
+  animation-duration: 3s;
+  top: calc(var(--tri-height-l) / 1.2 * -1);
+  left: 50%;
+}
+
+.triangle--fill.triangle--magenta {
+  animation-duration: 4s;
+  bottom: calc(var(--tri-height-s) / 3 * -1);
+  right: calc(var(--tri-width) / 4 * -1);
+}
+
+.triangle--fill.triangle--yellow {
+  animation-duration: 2s;
+  bottom: calc(var(--tri-height-s) / 2 * -1);
+  left: 0;
+}
+
+.triangle--stroke.triangle--blue {
+  animation-duration: 3s;
+  bottom: calc(var(--tri-height-l) / 6 * -1);
+  left: calc(var(--tri-width) / 2 * -1);
+}
+
+.triangle--stroke.triangle--magenta {
+  animation-duration: 2s;
+  top: calc(var(--tri-height-s) / 1.5 * -1);
+  right: 50%;
+}
+
+.triangle--stroke.triangle--yellow {
+  animation-duration: 4s;
+  bottom: calc(var(--tri-height-s) / 2 * -1);
+  right: calc(var(--tri-width) / 4 * -1);
+}
+
+@keyframes wobble {
+  to {
+    transform: rotate3d(1, 0, 0, 15deg);
+  }
+}
+
+.triangle--fill {
+
+  &.triangle--blue {
+    fill: var(--c-blue);
+  }
+
+  &.triangle--yellow {
+    fill: var(--c-yellow);
+  }
+
+  &.triangle--magenta {
+    fill: var(--c-magenta);
+  }
+
+}
+
+.triangle--stroke {
+  fill: none;
+  stroke-width: 2px;
+
+  &.triangle--blue {
+    stroke: var(--c-blue);
+  }
+
+  &.triangle--yellow {
+    stroke: var(--c-yellow);
+  }
+
+  &.triangle--magenta {
+    stroke: var(--c-magenta);
+  }
+
+}
+
+.logo--prismapop {
+  max-width: 40rem;
+}
+
+
+/* Cases */
+
+.cases {
+  border-bottom: 1px solid var(--c-light);
+  border-top: 1px solid var(--c-light);
+}
+
+.cases__slider {
+  height: 200px;
+  mask: linear-gradient(90deg, transparent, white 40%, white 60%, transparent);
+  padding-block: 2rem;
+}
+
+.cases__logo {
+  height: 100%;
+}
+
+
+/* About & Services */
+
+.columns {
+  display: grid;
+  grid-template-columns: 1fr auto auto 1fr;
+  grid-template-rows: 1fr 1fr;
+  justify-content: center;
+  justify-items: center;
+  margin: 10rem auto;
+}
+
+.text-block {
+  max-width: 70ch;
+}
+
+.about {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.services {
+  grid-column: 3;
+  grid-row: 2;
+}
+
+.services__list {
+  line-height: 1.3;
+  list-style: square inside;
+}
+
+.services__item {
+  margin: 1rem 0;
+}
+
+
+/* Swiper Overwrites */
+
+.swiper-wrapper {
+  margin: 0;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.swiper-slide {
+  align-items: center;;
+  display: flex;
+  width: auto;
+}
+
+.swiper-pagination {
+  padding-block: 1rem;
+}
+
+.swiper-pagination-bullet {
+  background-color: black;
+  height: .3rem;
+  opacity: .2;
+  transition: width 500ms;
+  width: .3rem;
+}
+
+.swiper-pagination-bullet-active {
+  border-radius: 100px;
+  opacity: 1;
+  width: 2rem;
+}

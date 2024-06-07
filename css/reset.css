@@ -1,0 +1,51 @@
+/* Makes sizing simpler */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default spacing */
+/* Force styling of type through styling, rather than elements */
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+/* Dark mode user-agent-styles */
+/* Improves punctuation in supported browsers */
+html {
+  /* color-scheme: dark light; */
+  hanging-punctuation: first last;
+}
+
+/* Minimum body height */
+body {
+  min-height: 100svh;
+}
+
+/* Responsive images/videos */
+img,
+picture,
+svg,
+video {
+  display: inline-block;
+  max-width: 100%;
+}
+
+/* Improved heading in supported browsers */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+/* Prevent orphans in supported browsers */
+p,
+li {
+  text-wrap: pretty;
+}

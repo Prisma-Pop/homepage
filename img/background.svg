@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 1063 567" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <rect id="Verso" x="0" y="0" width="1062.99" height="566.929" style="fill:none;"/>
+    <clipPath id="_clip1">
+        <rect id="Verso1" serif:id="Verso" x="0" y="0" width="1062.99" height="566.929"/>
+    </clipPath>
+    <g clip-path="url(#_clip1)">
+        <path id="magenta-fill" d="M604.705,588.961L604.705,1458.1L1730.43,-17.994L604.705,588.961Z" style="fill:rgb(255,135,255);"/>
+        <path id="magenta-outline-2" d="M-748.136,495.961L377.592,-110.994L-748.136,1365.1L-748.136,495.961ZM-743.969,498.448L-743.969,1352.77L362.562,-98.156L-743.969,498.448Z" style="fill:rgb(255,135,255);"/>
+        <path id="magenta-outline-1" d="M678.517,517.341L1239.13,215.078L678.517,950.174L678.517,517.341ZM682.683,519.829L682.683,937.839L1224.1,227.916L682.683,519.829Z" style="fill:rgb(255,135,255);"/>
+        <path id="yellow-fill" d="M267.496,475.961L267.496,1345.1L-858.232,-130.994L267.496,475.961Z" style="fill:rgb(255,215,0);"/>
+        <path id="yellow-outline-2" d="M778.392,89.093L778.392,-780.048L1904.12,696.048L778.392,89.093ZM782.559,86.606L1889.09,683.21L782.559,-767.714L782.559,86.606Z" style="fill:rgb(255,215,0);"/>
+        <path id="yellow-outline-1" d="M298.104,458.721L298.104,781.446L-119.896,233.35L298.104,458.721ZM293.937,461.208L-104.865,246.187L293.937,769.111L293.937,461.208Z" style="fill:rgb(255,215,0);"/>
+        <path id="blue-fill" d="M360.496,134.961L360.496,-2146.36L1486.22,-471.994L360.496,134.961Z" style="fill:rgb(128,233,255);"/>
+        <path id="blue-outline-2" d="M738.912,1163.84L738.912,416.264L1107.81,964.947L738.912,1163.84ZM743.079,1156.86C743.079,1156.86 1101.79,963.46 1101.79,963.46L743.079,429.929L743.079,1156.86Z" style="fill:rgb(128,233,255);"/>
+        <path id="blue-outline-1" d="M420.257,132.443L420.257,-615.136L789.153,-66.453L420.257,132.443ZM424.423,125.463C424.423,125.463 743.411,-46.524 783.132,-67.941L424.423,-601.471L424.423,125.463Z" style="fill:rgb(128,233,255);"/>
+    </g>
+</svg>
