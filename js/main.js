@@ -7,9 +7,20 @@ const swiper = new Swiper('.swiper', {
   speed: 2000,
   centeredSlides: true,
   loop: true,
-  allowTouchMove: false,
+  // allowTouchMove: false,
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
+  },
+  breakpoints: {
+    0: {
+      spaceBetween: 50,
+    },
+    800: {
+      spaceBetween: 100,
+    },
+    1024: {
+      spaceBetween: 150,
+    },
   },
 });
