@@ -249,28 +249,23 @@ h2 {
 /* Cases */
 
 .cases {
-  animation: 1s slide-in 0s both;
   border-block: 1px solid var(--c-light);
+  padding: 4rem;
 }
 
-.cases__slider {
-  height: var(--slider-height);
-  mask: linear-gradient(90deg, transparent, white 40%, white 60%, transparent);
-  opacity: .4;
-  padding-block: 2.5rem;
-  transition: opacity .5s;
-
-  &:hover {
-    opacity: 1;
-  }
-
-  @media (width < 800px), (orientation: landscape) and (height < 500px) {
-    padding-block: 1rem;
-  }
+.cases__list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 4rem;
+  row-gap: 1rem;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .cases__logo {
-  height: 100%;
+  height: 6rem;
 }
 
 
