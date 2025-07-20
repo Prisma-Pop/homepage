@@ -1,6 +1,6 @@
 /* Colors */
 :root {
-  --c-blue: #80e9ff;
+  --c-cyan: #80e9ff;
   --c-yellow: #ffd700;
   --c-magenta: #ff87ff;
   --c-mute: #667;
@@ -214,7 +214,7 @@ h2 {
 .triangle--fill {
 
   &.triangle--blue {
-    fill: var(--c-blue);
+    fill: var(--c-cyan);
   }
 
   &.triangle--yellow {
@@ -232,7 +232,7 @@ h2 {
   stroke-width: 2px;
 
   &.triangle--blue {
-    stroke: var(--c-blue);
+    stroke: var(--c-cyan);
   }
 
   &.triangle--yellow {
@@ -286,7 +286,7 @@ h2 {
 }
 
 .about {
-  background-color: var(--c-blue);
+  background-color: var(--c-cyan);
 }
 
 .about p {
@@ -338,39 +338,30 @@ h2 {
 }
 
 
-/* Swiper Overwrites */
+/* Páginas avulsas */
 
-.swiper-wrapper {
-  margin: 0;
-  pointer-events: none;
-  -webkit-user-select: none;
-  user-select: none;
-}
+.single {
+  background: var(--c-light);
+  margin: 4rem auto;
+  max-width: 40rem;
+  padding: 4rem;
 
-.swiper-slide {
-  align-items: center;;
-  display: flex;
-  width: auto;
-}
-
-.swiper-pagination {
-  opacity: 0;
-
-  .swiper:hover & {
-    opacity: 1;
+  & > :last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
   }
 }
 
-.swiper-pagination-bullet {
-  background-color: black;
-  height: .3rem;
-  opacity: .2;
-  transition: width 500ms;
-  width: .3rem;
+.single__title {
+  font-size: var(--fs-xl);
 }
 
-.swiper-pagination-bullet-active {
-  border-radius: 100px;
-  opacity: 1;
-  width: 2rem;
+.single__button {
+  border: 2px solid;
+  border-radius: 100rem;
+  color: inherit;
+  display: inline-block;
+  font-size: var(--fs-m);
+  padding: .5em 2em;
+  text-decoration: none;
 }
