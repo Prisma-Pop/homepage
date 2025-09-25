@@ -21,6 +21,11 @@
   --fs-xs: .5rem;
 }
 
+@font-face {
+  font-family: "Murecho";
+  src: url("../fonts/Murecho-VariableFont_wght.ttf");
+}
+
 @media (width < 1366px) {
   :root {
     --tri-width: calc(10vw * 4);
@@ -60,7 +65,7 @@
 /* Elements */
 
 html {
-  font-family: Murecho, sans-serif;
+  font-family: "Murecho", sans-serif;
   font-size: var(--fs-m);
 }
 
